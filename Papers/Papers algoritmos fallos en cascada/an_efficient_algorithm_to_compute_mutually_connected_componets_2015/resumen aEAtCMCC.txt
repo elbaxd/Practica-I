@@ -31,3 +31,11 @@ Terminada esta primera parte, todos los MCCs de una red múltiplex dada han sido
 
 De esta forma, el paso (vi) contiene el proceso de eliminación de links activos de las redes originales.
 
+Evaluación
+
+Se usarán 3 tipos de redes múltiplex doble capas: (i) grafos aleatorios propuestos por Erdös and Rényi, (ii) grafos aleatorios scale-free, en donde el grado de un nodo en una capa es igual al grado del nodo correspondiente en la otra capa, y (iii) lattices regulares de dos dimensiones.
+En donde, en cada tipo de red, el tamaño de un MCC gigante y el número de MCCs están medidos en función del mean degree. El cual está dado por k = 2L/N , donde L es el número de links que quedan en La o Lb en cada paso de la iteración, donde La = Lb. Para comparar los resultado de manera consistente, las redes se iniciaron con K=4.
+
+Para los grafos ER, el parámetro de orden exhibe un salto de P∞Jump ≈ 0.51 con Kc ≈ 2.46, valores los cuales están de acuerdo con los resultados.
+Para las scale-free networks, el tamaño del salto disminuye mientras que el degree exponent γ disminuye a 3. Para γ <=3, la transición es continua y no hay saltos obtenidos. Este resultado también consistente con los resultados obtenidos usando el algoritmo convencional aún cuando se eliminan nodos en este.
+Para las lattices regulares de dos dimensiones se realizaron simulaciones similares. Se obtuvo el punto de transición Kc≈ 2.29, correspondiente a la probabilidad de ocupación Pc ≈ 0.57 en un esquema convencional.
