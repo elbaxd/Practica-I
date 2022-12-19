@@ -49,3 +49,10 @@ El paso (v) fuerza a que se repitan los pasos (iii) y (iv) O(N) veces y por cada
 Estos pasos requieren de un tiempo de computación de O(N log^2 N).
 Sin embargo, cuando un link es eliminado, muchos otros links pueden cambiarse a inactivos, induciendo en cascada la eliminación en ida y vuelta en ambas capas. Así mismo, es posible que no induzca ningun proceso de inactivación.
 Estos procesos complicados dificultan la extracción del tiempo de complejidad.
+
+De esta forma, para estimar el tiempo de complejidad se recurre a métodos númericos.
+Para medir el tiempo de computación total T para realizar un seguimiento de los MCC de K=4 a 1 para los tres tipos de redes adyacentes.
+Para ER y redes scale-free, es probable que el degree exponent γ no afecte el tiempo de complejidad k>=3, pero el factor constante puede variar.
+El tiempo de complejidad depende del tamaño del sistema como O(N^1.2) para las redes complejas. Para lattices regulares de dos dimensiones, el tiempo de complejidad estimado es O(N^1.3). Esta diferencia númerica puede ser causada por la naturaleza de los fallos en avalancha dependiendo de la estructura de la red adyacente.
+
+Aparte del comportamiento de power-law, se puede esperar que las correciones logaritmicas afectadas por las cuatro operaciones de la estructura de los DF, pero no es claramente conclusiva.
