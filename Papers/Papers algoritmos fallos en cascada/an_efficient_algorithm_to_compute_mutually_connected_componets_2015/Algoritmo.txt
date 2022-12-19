@@ -1,0 +1,45 @@
+The first part of the algorithm proceeds as follows:
+
+(i) For a given initial configuration of each layer network (see Fig. 1(a)), a spanning tree is extracted
+randomly from each component, based on which
+FX (X = { A, B }) is constructed. By using
+Connect(v, w, F), the connection profile of each network is obtained.
+
+(ii) To identify MCCs, some ad hoc links are added between disconnected trees, which means adding ad
+hoc links to FX.[23] Let DX denote the set of all ad
+hoc links in layer X. Then, the set of active links
+can be denoted as AX = LX ∪ DX, and the set of
+inactive links becomes IX = ∅ (Fig. 1(b)).
+
+(iii) Choose a link at random from the set of ad hoc
+links DA and remove it (Fig. 1(c)). If e ∈ IA,
+then e is removed from IA. This case does not occur at the beginning, but it can occur during the
+iterative processes. If e /∈ IA, execute Delete(e =
+(v, w), FA). If no other pathway connecting v and
+w exists, this component would be split into two.
+The connection between v and w can be checked
+via Connect(v, w, FA) after deleting e.
+
+(iv) As shown in Fig. 1(d), the above division process
+in one layer may trigger some active links in the
+other layer into becoming inactive. For each of those
+inactivated links e, execute Delete(e, FX) and add it
+to IX. This deletion, in turn, can trigger some other
+links in AY into becoming inactive; then we repeat
+the above processes iteratively, where Y represents
+the counterpart layer of X. The details can be found
+in Appendix B.
+
+(v) Repeat steps (iii) and (iv) until DA = ∅ and DB = ∅.
+After the above first part is completed, all MCCs for
+a given multiplex network are identified and their structural information such as the sizes of each MCC can also
+be obtained from FX(X = {A, B}). Next, we take the
+following step to determine the evolution of the MCCs
+as links are actually removed. This second part of the
+algorithm can be accomplished by taking steps similar to
+(iii) and (iv).
+
+(vi) Repeat steps (iii) and (iv) on LA and LB instead of
+DA and DB. This process is repeated until the number of removed links reaches the value one wants
+(Fig. 1(e)). The order of link removals depends on
+the problem given.

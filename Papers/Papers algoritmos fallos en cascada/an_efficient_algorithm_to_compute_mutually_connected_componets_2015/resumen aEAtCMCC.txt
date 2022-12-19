@@ -1,0 +1,33 @@
+Primero, se explica que es un MCC (Mutually connected components)(Componentes mutuamente conectados).
+Luego, se menciona que hasta la creación del paper, no existía un algoritmo eficiente para obtener datos o 
+estadisticas de todos los MCC durante la eliminación de los links.
+
+Después, se dice que se usará un "fully dynamic graph algorithm" que se llama "HDT algorithm hereafter".
+Dice que, para cada capa de la red, en la que un componente no es un arból se cambia a un arból de expansión (spanning tree), se guarda la información del perfil en Euler Tour Tree, ya que pueden manejar eficientemente la separación o unión de arboles de expansión, pero que cuando ocurre una eliminación de links y se necesita información de los links redundantes entre nodos organizada de manera apropiada, el algoritmo HDT es una forma de mantener esta información. Asegura un orden del tipo O(log^2(N)) tiempo para la creación o eliminación de links cuando el ET es usado por la data structure del spanning tree.
+
+Se presenta un algoritmo y se introducen unos pre-requisitos para explicar el "dynamic graph algorithm", se dice que los ET (Euler Tree) constituyen un dynamic forest (DF)
+denota como F, el cual puede realizar las siguientes operaciones: Connected(v,w,F), Size(v,F), Insert(e,F) y Delete(e,F).
+
+Diciendo que estas operaciones se pueden realizar en O(log^2(N)) usando el algoritmo HDT y que cada link se categoriza en activo o inactivo.
+
+Sea una red múltiplex de doble capa con N nodos en cada capa, con La y Lb los set de links presentes en las capas A y B, respectivamente. Los DFs en cada red son Fa y Fb. Cada Fx almacena la estructura de los MCCs de la capa X conteniendo información de conexión de los links activos.
+Se presenta el algoritmo para eliminación de links entre MCC:
+
+(i)Para una configuración inicial de una capa de la red, se extrae un spanning tree aleatorio de cada componente, basado en como está construido el DF Fx (X = {A,B}),
+obteniendo el perfil de conexión de cada red con Connect(v,w,F).
+
+(ii)Para identificar MCCs, se agregan ad hoc links (líneas intermitentes) entre arboles desconectados, es decir, agregando ad hoc links a Fx. Se denota Dx como todos
+los ad hoc links en la capa X. Siendo el set de links activos Ax = Lx U Dx , y el set de links inactivos se convierte en Lx = ∅.
+
+(iii)Se elige un ad hoc link aleatorio de Da y se quita del grafo. Si e pertence a La, se quita de e de La. Este caso puede que no ocurra en el inicio, pero puede ocurrir durante el proceso iterativo. Si e no pertenece a La, se ejecuta Delete(e=(v,w),Fa). Si no existe otra ruta que conecte v con w, el componente se dividirá en dos. Se puede revisar la conexión de v y w con Connect(v,w,Fa), después de eliminar e.
+
+(iv)Debido al proceso de división en una capa, puede desencadenar que algunos links activos en la otra capa se vuelvan inactivos. Para cada uno de esos links inactivos e, se ejecuta Delete(e,Fx) y se agrega a Lx. Esta eliminación, puede desencadenar que otros links de Ay se vuelvan inactivos, por lo que se repite el proceso de manera iterativa, donde la capa Y representa una capa homóloga de X.
+
+(v)Se repiten los pasos (iii) y (iv) hasta que Da=∅ y Db=∅.
+
+Terminada esta primera parte, todos los MCCs de una red múltiplex dada han sido identificados y se puede obtener su información estructural, tales como el tamaño de cada MCCs de Fx (X = {A,B}).
+
+(vi)Repetir los pasos (iii) y (iv) en La y Lb en vez de en Da y Db. Este proceso se repite hasta que el número de links eliminados alcance el valor deseado.
+
+De esta forma, el paso (vi) contiene el proceso de eliminación de links activos de las redes originales.
+
