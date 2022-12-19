@@ -39,3 +39,13 @@ En donde, en cada tipo de red, el tamaño de un MCC gigante y el número de MCCs
 Para los grafos ER, el parámetro de orden exhibe un salto de P∞Jump ≈ 0.51 con Kc ≈ 2.46, valores los cuales están de acuerdo con los resultados.
 Para las scale-free networks, el tamaño del salto disminuye mientras que el degree exponent γ disminuye a 3. Para γ <=3, la transición es continua y no hay saltos obtenidos. Este resultado también consistente con los resultados obtenidos usando el algoritmo convencional aún cuando se eliminan nodos en este.
 Para las lattices regulares de dos dimensiones se realizaron simulaciones similares. Se obtuvo el punto de transición Kc≈ 2.29, correspondiente a la probabilidad de ocupación Pc ≈ 0.57 en un esquema convencional.
+
+También se examinó el número Nc de MCCs divididos por el tamaño del sistema, s=Nc/N.
+Para ER y redes scale-free, s tiene un comportamiento similar a P∞, pero al revés.
+Sin embargo, para lattices regulares de dos dimensiones es diferente. La revisión del comportamiento de s VS k en sistemas tan grandes no sería posible a menos que el algoritmo sea aplicado.
+
+La complejidad del algoritmo
+El paso (v) fuerza a que se repitan los pasos (iii) y (iv) O(N) veces y por cada paso (iii) y (iv), se ejecuta la función Delete al menos una vez.
+Estos pasos requieren de un tiempo de computación de O(N log^2 N).
+Sin embargo, cuando un link es eliminado, muchos otros links pueden cambiarse a inactivos, induciendo en cascada la eliminación en ida y vuelta en ambas capas. Así mismo, es posible que no induzca ningun proceso de inactivación.
+Estos procesos complicados dificultan la extracción del tiempo de complejidad.
