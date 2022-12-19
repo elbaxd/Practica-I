@@ -1,0 +1,2 @@
+El día de hoy leí el paper "an_efficient_algorithm_to_compute_mutually_connected_componets_in_interdependent_networks_2015", lo entendí y realize un resumen con lo más importante, el algoritmo y las cosas necesarias para entenderlo. Me faltó resumir la parte final del paper.
+Además, revisé por encima los demás papers que tendré que leer y resumir.
