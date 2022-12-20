@@ -1,0 +1,6 @@
+El problema de detener el fallo en cascada se encuentra tanto en detectar la fuente del fallo como en colocar los nodos protectores de manera correcta y estrategica, para mitigar el riesgo sistematico.
+
+Las principales contribuciones del paper son:
+
+Introducir la nocion de un poset (Partially Ordered set) como un medio de modelar causalidad para la inferencia de problemas con fallos en cascada. Aprovechar los poset limitados por las propiedas topologicas para derivar relaciones de equivalencias con el centroid teorico de un grafo.
+Formular un problema de optimización de colocación de nodos protectores en redes que tengan tree-graph topologies para mitigar el riesgo sistematico del fallo en cascada y mostrar que graph centroid characterization es una solución factible, que cuando es óptima se considera solo un nodo protegido. En general, 
