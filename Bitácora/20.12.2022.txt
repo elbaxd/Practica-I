@@ -1,0 +1,3 @@
+Terminé con el resumen del primer Paper.
+
+Empecé con el paper "Graph_Algorithms_for_Preventing_Cascading_Failures_in_Networks_2018", leyendolo por completo y tratando de comprenderlo lo mejor posible. Luego, empecé con el resumen y llegué a por la mitad. Es más denso de lo que aparentaba.
