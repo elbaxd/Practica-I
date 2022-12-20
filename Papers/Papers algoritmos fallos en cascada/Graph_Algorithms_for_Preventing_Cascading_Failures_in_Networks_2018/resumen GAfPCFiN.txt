@@ -3,4 +3,14 @@ El problema de detener el fallo en cascada se encuentra tanto en detectar la fue
 Las principales contribuciones del paper son:
 
 Introducir la nocion de un poset (Partially Ordered set) como un medio de modelar causalidad para la inferencia de problemas con fallos en cascada. Aprovechar los poset limitados por las propiedas topologicas para derivar relaciones de equivalencias con el centroid teorico de un grafo.
-Formular un problema de optimización de colocación de nodos protectores en redes que tengan tree-graph topologies para mitigar el riesgo sistematico del fallo en cascada y mostrar que graph centroid characterization es una solución factible, que cuando es óptima se considera solo un nodo protegido. En general, 
+Formular un problema de optimización de colocación de nodos protectores en redes que tengan tree-graph topologies para mitigar el riesgo sistematico del fallo en cascada y mostrar que graph centroid characterization es una solución factible, que cuando es óptima se considera solo un nodo protegido. En general, mediante el uso de centroid decomposition, se propone algoritmo computacionalmente eficiente que puede ser parametrizado recursivamente basado en la centralidad del peso de la rama para colocar los nodos protectores para mitigar el daño sistematico de los fallos en cascada.
+
+
+MODELING CASCADING FAILURE USING POSETS
+
+Susceptible-infectious (SI) model
+En este modelo existen dos vértices: (i) vértices suceptibles a fallar y (ii) vértices infectados que inducen a sus suceptibles vecinos a fallar.
+
+Centroid as Network Center
+
+Rumor centrality de un vértice v es el número de orden de esparcimiento del vértice v. El vértice con más rumor centrality se le llama rumor center.

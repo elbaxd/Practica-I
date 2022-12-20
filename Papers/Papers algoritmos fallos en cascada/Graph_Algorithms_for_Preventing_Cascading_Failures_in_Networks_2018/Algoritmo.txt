@@ -1,0 +1,44 @@
+Algorithm 1 Centroid Decomposition and Centroid Tree
+Initially set currentLV = 0
+CENTROID-DECOMPOSITION(T,currentLV ,v
+previousLV
+c
+)
+currentLV = currentLV + 1
+Compute the centroid vc of T (if there is two centroids,
+then randomly pick one)
+vc.lv = currentLV
+Decompose T into several subtrees T
+0
+j
+s by removing vc
+from T
+V (Tc) = V (Tc) ∪ {vc}
+if vc.lv 6= 1 then
+E(Tc) = E(Tc) ∪ {(vc, vpreviousLV
+c
+)}
+end if
+for each subtree Tj do
+if |Tk| > 1 then
+CENTROID-DECOMPOSITION(Tj ,currentLV ,vc)
+else
+v.lv = currentLV + 1, ∀v ∈ V (Tj )
+V (Tc) = V (Tc) ∪ {v}
+E(Tc) = E(Tc) ∪ {(v, vpreviousLV
+c
+)}
+end if
+end for
+Algorithm 2 Construct VP
+Input: Tc, k, Set VP = { }
+Compute t
+parent(v)
+v for each v ∈ Tc
+Let Sortv be the list of vertices in Tc sorted in a decreasing
+order according to t
+parent(v)
+v
+for i = 1 . . . k do
+VP = VP ∪ Sortv(i)
+end for
