@@ -1,2 +1,3 @@
 an_efficient_algorithm_to_compute_mutually_connected_componets_2015 listo
 Graph_Algorithms_for_Preventing_Cascading_Failures_in_Networks_2018 por terminar
+Targeted_damage_to_interdependent_networks_2018 no posee algoritmo, volver a revisarlo más adelante.
