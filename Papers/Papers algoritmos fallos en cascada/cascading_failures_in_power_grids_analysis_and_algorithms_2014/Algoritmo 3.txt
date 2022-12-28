@@ -1,0 +1,7 @@
+Algorithm 3 - Most Vulnerable Edges Selection – Resistance distance Based (MVES-RB)
+Input: A connected graph G = (V, E) and an integer k ≥ 1.
+1: Compute A+.
+2: Compute the phase angles Θ =  A+P and compute flows fe from the phase angles.
+3: Compute the resistance distance r(i, j) = r(e) ∀e = {i, j} ∈ E.
+4: Sort edges e1, e2, . . . , e|E| such that p ≤ q iff fep  r(ep) ≥ feq r(eq).
+5: return e1, e2, . . . , ek.

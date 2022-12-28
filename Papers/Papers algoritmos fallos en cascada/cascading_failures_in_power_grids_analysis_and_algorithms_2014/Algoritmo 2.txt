@@ -1,0 +1,16 @@
+Algorithm 2 - Cascading Failure Evolution – Pseudoinverse Based (CFE-PB)
+Input: A connected graph G = (V, E) and an initial edge failures
+event F0 ⊆ E.
+1: Compute A+, F*0 ← F0 and i ← 0.
+2: while Fi != ∅ do
+3: 	for each {r, s} ∈ Fi do
+4: 		if {r, s} is a cut-edge (see Lemma 1) then
+5: 			Find the connected components after removing {r, s}.
+			(see Lemma 2)
+6: 			Adjust the total demand to equal the total supply
+			within each connected component.
+7: 		else update A+ after removing {r, s}. (see Lemma 4)
+8: 	Compute the phase angles Θ = ˆ A+P and compute new
+	flows fe(F*i) from the phase angles.
+9: 	Find the set of new edge failures Fi+1 = {e|fe > ce, e ∈ E \ F*i}. F*i+1 ← F*i ∪ Fi+1 and i ← i + 1.
+10: return t = i − 1, (F0, . . . , Ft), and fe(F*t) ∀e ∈ E\F*t.

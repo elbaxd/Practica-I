@@ -1,0 +1,16 @@
+Algorithm 1 Max-Cas Greedy Algorithm
+Input: Interdependent system J(Gs,Gc,Esc), an integer k
+Output: Set of k critical nodes in T ∈ Vs
+T ← ∅
+for i=1 to k do
+	As,Ac ← set of articulation nodes of Gs and Gc respectively
+	A ← {u∈Vs |u∈As V ((u,v)∈Esc y v∈Ac)}
+	if A != ∅ then
+		u ← argmax_u∈A Max-Cas(G_s,T,{u})
+		T ← T U {u}
+	else
+		u ← any mode in V_s \ T
+	end if
+	Update J[V_s\T]
+end for
+Return T

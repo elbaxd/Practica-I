@@ -1,0 +1,13 @@
+Algorithm 2 Iterative Interdependat Centrality
+Input: Characterize matrix M and allowed error e
+Output: Centrality vector
+x ← 1
+error ← +infinito
+while error > e do
+	y ← Mx
+	norm ← ||y||
+	y ← y/norm
+	error ← ||y-x||
+	x ← y
+end while
+Return x
