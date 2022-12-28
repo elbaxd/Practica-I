@@ -1,0 +1,23 @@
+Algorithm 1 Estimating the path failure probability based on
+importance sampling.
+Initialization:
+1) Given a path {v1, v2,...,vm}, let {uij|j = 1,...,ns(vi)}
+denote the set of supply nodes of vi, where ns(vi) is the
+number of supply nodes of vi.
+
+Main loop:
+2) Among {v1, v2,...,vm}, randomly choose vi with probability
+1≤j≤ns(vi) p(uij)/ 1≤k≤m  1≤j≤ns(vk)p(ukj).
+If every demand node has an identical number of supply
+nodes, and the supply node failure probability p(uij) is
+identical, then node vi is chosen with probability 1/m.
+3) If vi is chosen, set all of its supply nodes {uij|j = 1,...,ns(vi)} to be failed. The other supply nodes are randomly set to be failed with their respective failure probabilities. Let U denote the set of failed supply nodes.
+4) Test whether vi is the first failed node among
+{v1, v2,...,vm}, given that U fail (and no other supply
+nodes fail). If true, set I = 1; otherwise, set I = 0.
+Repeat the loop for a = 3m ln(2/δ)/2 iterations.
+
+Result:
+5) Count the number of I = 1 and denote the number by b.
+An (e, δ)-approximation of the path failure probability is
+given by b/a 1≤k≤m  1≤j≤ns(vk) p(ukj).

@@ -1,0 +1,13 @@
+Algorithm 3 Computation of the Global Minimum Color
+Node Cut of G Where G[Vi] Is Connected ∀i
+1) Compute minimum color st node cut Cst c for all nonadjacent st pairs in G by Algorithm 2. Let C1 c denote
+the minimum size Cst c over all st pairs. (The cut C1 c is
+the minimum color node cut of G that partitions G into
+more than one component.)
+2) Compute the minimum set of colors C2 c that cover at
+least n − 1 out of the n nodes in G. (I.e., if there exists
+a color i that is carried by one node, then C2 c include
+all the colors except color i. If there is no color that is
+carried by a single node, then C2 c include all the colors.)
+3) The minimum color node cut of G is given by the
+smaller of C1 c and C2 c .

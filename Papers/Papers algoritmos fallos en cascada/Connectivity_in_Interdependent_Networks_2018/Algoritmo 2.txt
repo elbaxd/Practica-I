@@ -1,0 +1,9 @@
+2 Computation of the Minimum Color st Node
+Cut in G Where G[Vi] Is Connected ∀i
+1) Construct a new graph G´ from G as follows. Contract
+the nodes Vi, which have the same color i, into
+a single node ui. Connect ui and uj if and only
+if there is at least one edge between Vi and Vj .
+Connect s to {ui|s is connected to Vi}, and connect t´ to {ui|t is connected to Vi}.
+2) Compute the minimum s´t´ node cut in G´, in which
+every node has a distinct color. The minimum color st node cut in G is given by the colors of the s´t´ cut nodes in G´.

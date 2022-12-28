@@ -1,0 +1,8 @@
+Algorithm 5 CDS-Based Color Assignment
+1) Compute the node connectivity k of G. Identify k^CDS =
+Ω(k/ log^2 n) node-disjoint CDS using the algorithm
+in [19].
+2) Assign the same color to all the nodes in a CDS. If nc ≥
+k^CDS, assign a distinct color to each CDS. If nc < k^CDS,
+assign a distinct color to each of nc CDS, and assign an
+arbitrary color to each remaining CDS.

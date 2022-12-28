@@ -1,0 +1,9 @@
+Algorithm 1 Transformation From the Demand Graph G1 to
+a Colored Graph G˜1
+1) If a node vi ∈ G1 has ns(vi) supply nodes, ns(vi)
+copies of vi exist in G˜1. Each copy has a color which
+identifies a supply node. No edge exists between the
+copies of vi.
+2) If vi and vj are connected by an edge in G1, then all
+the copies of vi are connected to all the copies of vj
+in G˜1.

@@ -1,0 +1,11 @@
+Algorithm 2 An approximation algorithm to compute a reliable st path in G(V,E, SV ).
+
+1) For each vi ∈ V , compute p˜(vi) as follows. Let uij be a supply node of vi with failure probability p(uij).
+If uij supports nd(uij) nodes, let p˜(uij)=1 − (1 − p(uij))1/nd(uij). Let p˜(vi) be the failure probability of vi
+if uij fails independently with probability p˜(uij ).
+
+2) Compute the most reliable st path assuming that vi fails
+independently with probability p˜(vi). The most reliable
+path can be obtained by a standard shortest path algorithm
+(e.g., Dijkstra’s algorithm), by letting − ln(1 − p˜(vi)) be
+the length of traversing node vi.

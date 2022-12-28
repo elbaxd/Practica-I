@@ -1,0 +1,10 @@
+Algorithm 1 - Cascading Failure Evolution (CFE)
+Input: A connected graph G = (V, E) and an initial edge failures
+event F0 ⊆ E.
+1: F*0 ← F0 and i ← 0.
+2: while Fi != ∅ do
+3: 	Adjust the total demand to equal the total supply within
+	each connected component of G = (V, E \ F*i).
+4: 	Compute the new flows fe(F*i) ∀e ∈ E \ F*i.
+5: 	Find the set of new edge failures Fi+1 = {e|fe(F*i) > ce, e ∈ E \ 	F*i}. F*i+1 ← F*i ∪ Fi+1 and i ← i + 1.
+6: return t = i − 1, (F0, . . . , Ft), and fe(F*t) ∀e ∈ E\F*t.

@@ -1,0 +1,12 @@
+Algorithm 6 Assign Nodes Vi Into |Vi|/nsj 	 Full Groups of
+Size nsj
+1) Sort the h disjoint CDS in the ascending order of their
+sizes. Denote the nodes in the l-th CDS in Gi by N^l,l = 1, 2,...,h.
+
+2) For l from 1 to h, start with an empty group if available,
+and assign nodes from N^l into the group. Repeat until
+all nodes are assigned. If there are not enough empty
+groups, assign the rest nodes into occupied groups until
+these groups become full.
+3) The algorithm terminates when the [|Vi|/nsj]	 groups
+become full.

@@ -1,0 +1,6 @@
+Algorithm 4 Path-Based Color Assignment
+1) Compute the st node connectivity k^st. Identify kst nodedisjoint st paths.
+2) Assign the same color to all the nodes in a path. If nc ≥
+k^st, assign a distinct color to each path. If nc < k^st,
+assign a distinct color to each of nc paths, and assign
+an arbitrary color to each remaining path.
