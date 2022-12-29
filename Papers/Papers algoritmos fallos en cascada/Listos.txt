@@ -10,7 +10,7 @@ Graph_Algorithms_for_Preventing_Cascading_Failures_in_Networks_2018 :algoritmos 
 
 Interdependent_Power_Network_Disruptor_problem_NP_complete_2013 :algoritmos listos, falta resumen y entederlo.
 
-Maximization_of_Robustness_of_Interdependent_Networks_under_Budget_Constraints_2019 :
+Maximization_of_Robustness_of_Interdependent_Networks_under_Budget_Constraints_2019 : algoritmo listo, falta resumen y repaso.
 
 Minnimum_spanning_trees_in_temporal_graphs_2015 :algoritmos listos, revisar el algoritmo 2 y preguntar a Ivana, falta resumen y comprension
 

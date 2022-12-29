@@ -1,0 +1,13 @@
+Algorithm 1 Optimal Resource Computation
+1: procedure OPT_ALLOC(α, G_A, G_B, b, ∆_th)
+2: p1 ← 0, p2 ← max(size(G_A), size(G_B)), ∆ ← inf
+3: while ∆ > ∆_th do
+4: 	ν ← (p1 + p2)/2
+5: 	˜b ← (Sumatoria)_l EB(a_l,ν)
+6: 	if ˜b > b then
+7: 		p2 ← ν
+8: 	else
+9: 		p1 ← ν
+10: 	∆ ← |˜b − b|
+11: xl ← EB(α_l,ν)
+12: return x_l,∀l
