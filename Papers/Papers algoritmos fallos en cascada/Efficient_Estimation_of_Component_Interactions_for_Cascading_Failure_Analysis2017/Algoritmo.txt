@@ -4,7 +4,7 @@ steps.
 B^(0). In order to avoid ignoring any useful information,
 we assume that any failed components in generation g is
 the cause of the component failures in generation g + 1.
-Then the initial matrix A^(0) ∈ Zn×n can be obtained
+Then the initial matrix A^(0) ∈ Z^n×n can be obtained
 from all original cascades and B^(0) can be calculated
 from A^(0) by using (1).
 Note that the assumption here tends to overestimate the
@@ -24,21 +24,22 @@ will be validated by the test results in Section VI.
 For any two successive nonzero generations g, g + 1 of
 any cascade m, under the condition that component j
 has failed, the component j failure in generation g + 1
-is caused by component i ∈ F^(m) g in generation g by
+is caused by component i ∈ F^(m)_g in generation g by
 probability
 
-p^(k+1)m,g ij = b^(k) ij / 1 − l∈F^(m) g  (1 − b^(k) lj ). (5)
-If i /∈ F^(m) g , p^(k+1)m,g ij  = 0. For example, for the two
+p^(k+1)m,g _ij = b^(k)_ij / 1 − (Pitatoria)_(l∈F^(m)_g)  (1 − b^(k)_lj ). (5)
+If i /∈ F^(m)_g , p^((k+1)m,g)_ij  = 0. 
+
+For example, for the two
 consecutive generations shown in Fig. 3, there is
-pAD = bAD
-1 − (1 − bAD)(1 − bBD)(1 − bCD)
-, (6)
-and pAE, pBD, pBE, pCD, and pCE can also be written
+p_AD = b_AD / 1 − (1 − b_AD)(1 − b_BD)(1 − b_CD), (6)
+
+and p_AE, p_BD, p_BE, p_CD, and p_CE can also be written
 in a similar manner.
 The updated entry of A^(k+1) can be obtained as the
 summation over all consecutive nonzero generations for
 all cascades 
-a^(k+1) ij  = Mu m=1  G^m −2 g=0  p^(k+1)m,g ij , (7)
+a^(k+1)_ij  = (Sumatoria)^(M_u)_(m=1) (Sumatoria)^(G^m−2)_(g=0) p^((k+1)m,g)_ij, (7)
 where G^m is the number of generations with nonzero
 number of outages in cascade m.
 3) M-step: Estimate B^(k+1) based on A^(k+1).
@@ -46,8 +47,9 @@ After A^(k+1) is obtained, the updated interaction matrix
 B^(k+1) can be calculated by using (1).
 4) End: Iterate the E-step and M-step until
 
-||B^(k+1) ij  − B^(k) ij  ||F  /√Nnonzero  <e , (8)
-where ||X||F is the Frobenius norm of a u × v matrix X defined as
-||X||F = √(u i=1  v j=1  |Xij|^2), (9)
-Nnonzero is the number of nonzero elements in B^(k+1)ij − B^(k) ij , e is the tolerance, and the B^(k+1) ij that satisfies (8)
+(||B^(k+1)_ij  − B^(k)_ij  ||_F  /(Raiz cuadrada)(N_nonzero) ) < e , (8)
+
+where ||X||_F is the Frobenius norm of a u×v matrix X defined as ||X||_F = (Raiz cuadrada)((Sumatoria)^(u)_(i=1) (Sumatoria)^(v)_(j=1) |Xij|^2), (9)
+
+N_nonzero is the number of nonzero elements in B^(k+1)_ij − B^(k)_ij , e is the tolerance, and the B^(k+1)_ij that satisfies (8)
 will be the estimated interaction matrix.
