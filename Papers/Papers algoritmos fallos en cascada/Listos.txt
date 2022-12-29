@@ -1,12 +1,19 @@
 an_efficient_algorithm_to_compute_mutually_connected_componets_2015 listo
 
-Graph_Algorithms_for_Preventing_Cascading_Failures_in_Networks_2018 por terminar
-
-Targeted_damage_to_interdependent_networks_2018 no posee algoritmo, volver a revisarlo más adelante.
-
 cascading_failures_in_power_grids_analysis_and_algorithms_2014 los algoritmos listos, repasar el contenido teorico del paper.
 
 Connectivity_in_Interdependent_Networks_2018 los algoritmos listos, repasar el contenido teorico del papers.
 
 Efficient_Estimation_of_Component_Interactions_for_Cascading_Failure_Analysis_by_EM_Algorithm_2017 algoritmo listo, repasar el contenido del paper.
 
+Graph_Algorithms_for_Preventing_Cascading_Failures_in_Networks_2018 por terminar
+
+Interdependent_Power_Network_Disruptor_problem_NP_complete_2013 
+
+Maximization_of_Robustness_of_Interdependent_Networks_under_Budget_Constraints_2019
+
+Minnimum_spanning_trees_in_temporal_graphs_2015
+
+Robust_Routing_in_Interdependent_Networks_2017 algoritmos listos, falta leerlo de nuevo y hacer el resumen
+
+Targeted_damage_to_interdependent_networks_2018 no posee algoritmo, volver a revisarlo más adelante.
