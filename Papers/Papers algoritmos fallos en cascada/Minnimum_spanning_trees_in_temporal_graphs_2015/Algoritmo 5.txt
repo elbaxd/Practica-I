@@ -1,0 +1,23 @@
+Algorithm 5: B^i (k, r, X, e)
+Input : Terminal set X, maximum number of available terminals k, root r, level number i, the incoming edge e of r, G_t;
+Output : A tree T with height i rooted at r covering at most k
+terminals in X so that the density of T ∪ e is the smallest
+1 Initialize: T ← ∅; Tc ← ∅, where den(T ∪ e) = den(Tc ∪ e) = ∞;
+2 if i = 1 then
+3 	while k > 0 do
+4 		(r, v) ← arg_(r,v) min cost(r, v),∀v ∈ X;
+5 		T_c ← T_c ∪ (r, v); k ← k − 1; X ← X − {v};
+6 		if den(T ∪ e) > den(T_c ∪ e) then
+7 			T = T_c;
+8 else
+9 	while k > 0 do
+10		T_BEST ← ∅; den(T_BEST ) ← ∞;
+11 		for each vertex v ∈ V do
+12 			T´ ← B^i−1 (k, v, X, (r, v)) ∪ (r, v);
+13 			if den(T_BEST ) > den(T´) then
+14 				T_BEST ← T´;
+15 		T_c ← T_c ∪ T_BEST ; k ← k − |X| ∩ V (T_BEST );
+		X ← X − V (T_BEST );
+16 		if den(T ∪ e) > den(T_c ∪ e) then
+17 			T = T_c;
+18 return T;

@@ -1,0 +1,14 @@
+Algorithm 6: FinalA^i (k, r, X)
+1* Same as Algorithm 4 except for replacing Lines 9-12 by the following:
+2* for each vertex v ∈ V (in sorted order) do
+3* 	if τ(v) < τbest then
+4* 		T´ ← FinalB^i−1 (k, v, X, (r, v)) ∪ (r, v);
+5* 		if den(T_BEST ) > den(T´) then
+6* 			TBEST ← T´;
+7* 		τ(v) ← den(T´);
+8* 		if τ(v) < τ_best then
+9* 			τbest ← τ(v);
+10* 	else
+11* 		sort V according to τ(v), ∀v ∈ V;
+12* 		break;
+13* /* FinalB^i−1 (k, v, X, (r, v)) is the same as Algorithm 5 except for replacing Lines 11-14 by the same for-loop replacement (Lines 2*-12*) as in the above. */

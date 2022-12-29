@@ -1,0 +1,17 @@
+Algorithm 2: MST_a(r, G)
+Input : A temporal graph G[t_α, t_ω] (in sorted adjacency edge list format), root r, time interval [t_α, t_ω];
+Output : MST_a (given by P())
+1 Initialize: A(u) = ∞, pos(u) = 1, ∀u ∈ V ; push < r, r, t_α > onto stack S;
+2 while S != ∅ do
+3 	< u, v,tˆ_v > ← top(S), pop(S);
+4 	if tˆ_v < A(v) then
+5 		A(v) ← tˆ_v;
+6 		P(v) ← u;
+7 	if pos(v) ≤ |N_o(v)| then
+8 		< v, v´,t_v,tˆ_v´, w´> ← N_o(v)[pos(v)];
+9 		while pos(v) ≤ |N_o(v)| and A(v) ≤ t_v do
+10 			push < v, v´,tˆ_v´> onto stack S;
+11 			pos(u) + +;
+12 			< v, v´,t_v,tˆ_v´, w´>← N_o(v)[pos(v)];
+
+Consultar sobre N_o, ya que hay dos N_o en el algoritmo del paper

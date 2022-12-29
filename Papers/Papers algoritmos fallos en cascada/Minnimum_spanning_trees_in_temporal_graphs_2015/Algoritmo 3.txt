@@ -1,0 +1,19 @@
+Algorithm 3: A^i (k, r, X)
+Input : Terminal set X, number of terminals k to be covered, root r,
+level number i, transitive closure G_t;
+Output : A tree T with height i rooted at r covering k terminals in X
+1 Initialize: T ← ∅;
+2 if i = 1 then
+3 	while k > 0 do
+4 		(r, v) ← arg_(r,v) min cost(r, v),∀v ∈ X;
+5 		T ← T ∪ (r, v); k ← k − 1; X ← X − {v};
+6 else
+7 	while k > 0 do
+8 		T_BEST ← ∅; den(T_BEST ) ← ∞;
+9 		for each vertex v ∈ V and each k´, 1 ≤ k´ ≤ k do
+10 			T´ ← A^(i−1)(k´, v, X) ∪ (r, v);
+11 			if den(T_BEST ) > den(T´) then
+12 				TBEST ← T´;
+13 		T ← T ∪ T_BEST ; k ← k − |X| ∩ V (T_BEST );
+		X ← X − V (T_BEST );
+14 return T;

@@ -1,0 +1,8 @@
+Algorithm 1: MST a(r, G, t)
+Input : A temporal graph G (chronological edge list), root r, time interval [t_α, t_ω];
+Output : MST_a (given by P())
+1 Initialize: A(u) = ∞,P(u) = r ∀u != r, u ∈ V ;A(r) = t_α;
+2 for e = (u, v, t_u,tˆ_v, w) ∈ G do
+3 	if (t_u ≥ A(u))&(tˆ_v < A(v))&(tˆ_v ≤ t_ω) then
+4 		A(v) ← tˆ_v;
+5 		P(v) ← u;
