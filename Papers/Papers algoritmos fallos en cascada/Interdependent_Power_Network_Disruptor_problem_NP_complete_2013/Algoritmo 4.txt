@@ -1,0 +1,14 @@
+Algorithm 4 Hybrid Algorithm
+Input: Interdependet system J(G_s,G_c,E_sc), an integer k
+Output: Set of k critical nodes in T ∈ V_s
+T ← ∅
+for i=1 to k do
+	if i is odd then
+		Select y as Max-Cas algorithm
+	else
+		Select u as IIC algorithm
+	end if
+	T ← T U {u}
+	Update J[V_s \ T]
+end for
+Return T

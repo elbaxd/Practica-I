@@ -1,0 +1,13 @@
+Algorithm 3 IIC-based Algorithm
+Input: Interdependent system J(G_s,G_c,E_sc), an integer k
+Output: Set of k critical nodes in T ∈ V_s
+T ← ∅
+for i=1 to k do
+	α ← 0.5, Compute M
+	e ← 10^-8
+	Compute centrality vector x using Algorithm 2.
+	u ← argmax_(V_s \T) x[u]
+	T ← T U {u}
+	Update J[V_s \T]
+end for
+Return T

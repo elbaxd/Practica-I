@@ -1,0 +1,7 @@
+Algorithm 2 Construct VP
+Input: T_c, k, Set VP = { }
+Compute t^parent(v)_v for each v ∈ T_c
+Let Sort_v be the list of vertices in T_c sorted in a decreasing order according to t^parent(v)_v
+for i = 1 . . . k do
+	V_P = V_P ∪ Sort_v(i)
+end for
