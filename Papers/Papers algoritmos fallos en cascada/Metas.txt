@@ -1,3 +1,5 @@
 Leer los papers y resumirlos: para el 30 de diciembre de 2022, con posibilidad de extenderlo 3 días, hasta el 5 de enero de 2023.
 
 Implementar los algoritmos: para el 13 de enero de 2023, con posibilidad de extenderlo 1 semana más hasta el 20 de enero de 2023.
+
+Día miércoles 29 de diciembre de 2022: Terminé con la recolección de los algoritmos de los papers, usaré los días restantes hasta el 5 de enero aproximadamente para comprender lo mejor posible los papers y terminar los resumenes.
