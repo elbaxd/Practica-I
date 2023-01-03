@@ -15,5 +15,24 @@ Se probó que el problema de encontrar el set de fallos iniciales de tamaño k q
 
 La principal contribución del paper es el desarrollo de nuevas herramientas, basados en el matrix analysis, para evaluar el impacto de el fallo de una sola linea.
 
-RELATED WORK
+MODELS AND METRICS
+
+DC POWER FLOW MODEL
+Se representa una red elétrica con un grafo no dirigido G = (V,E) con V y E el set de nodos y aristas correspondientes a los buses y líneas de transmisión respectivamente.
+
+p_v es el suministro de poder (p_v >0) o demanda de poder (p_v <0) del nodo v∈V (un nodo neutral tiene p_v=0). Se asume que todos los nodos son reactivos.
+
+CASCADING FAILURE MODEL
+Algorithm 1 - Cascading Failure Evolution (CFE)
+Input: A connected graph G = (V, E) and an initial edge failures
+event F0 ⊆ E.
+1: F*0 ← F0 and i ← 0.
+2: while Fi != ∅ do
+3: 	Adjust the total demand to equal the total supply within
+	each connected component of G = (V, E \ F*i).
+4: 	Compute the new flows fe(F*i) ∀e ∈ E \ F*i.
+5: 	Find the set of new edge failures Fi+1 = {e|fe(F*i) > ce, e ∈ E \ 	F*i}. F*i+1 ← F*i ∪ Fi+1 and i ← i + 1.
+6: return t = i − 1, (F0, . . . , Ft), and fe(F*t) ∀e ∈ E\F*t.
+
+Ante un fallo, algunas lineas son eliminadas del grafo, implicando que podría convertirse en desconectados. 
 
