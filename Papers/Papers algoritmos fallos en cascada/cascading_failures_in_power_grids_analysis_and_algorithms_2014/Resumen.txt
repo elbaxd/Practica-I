@@ -1,0 +1,19 @@
+ABSTRACT
+Se estudiará los fallos en cascada con herramientas computacionales y un a linearized power flow model. Se obtienen primero los resultados con respecto a Moore-Penrose pseudo-inverse de la power grid admittance matrix. Según estos resultados, se estudia el impacto de el fallo de una sola línea en el flujo del resto de lineas. Se ilustra por medio de una simulación el impacto de la distancia y la distancia de resistencia en el aumento del flujo después de un fallo, discutiendo la diferencia con los epidemic models. Se desarrolla un algoritmo eficiente para identificar la evolución del fallo en cascada usando el pseudo-inverse de una admittance matrix, en donde puede ser un bloque de construcción para la mitigación de las cascadas. Se muestra que encontrar el set de lineas a remover que resulten en el minimo rendimiento es NP-dificil (NP-Hard) e introducir un simple heuristic por encontar dicho set.
+
+Introduction
+
+En cascadas reales de gran escala, el fallo en una línea específica puede afectar una línea remota y la cascada no necesariamente se desarrolla de una manera contigua.
+
+Para estudiar el impacto de una sola línea que falla en otras lineas, se usan herramientas de analisis de matrices para estudiar las propiedades de la admittance matrix de la red (grid) (n x n, que representan las admittance de las lineas de una power grid de n nodos) y Moore-Penrose Pseudo-inverse de la admittance matrix.
+
+Con estos resultados junto a la distancia de resistencia y kirchhoff index notions, se estudia el impacto del fallo de una sola línea en el flujo en otras lineas. Hay casos en los que el flujo de una linea lejos de la falla aumenta considerablemente.
+
+Una vez que las líneas fallan, es necesario un algoritmo de baja complejidad para controlar y mitigar la cascada. Se desarrolla Cascading Failure Evolution Pseudo-inverse Based (CFE-PB) Algorithm para identificar la evolución de una cascada que se pudo haber iniciado por el fallo en varias lineas. La complejidad e O(|V|^3 + |F^*_t||V|^2) con |F^*_t| el numero de lineas que eventualmente fallaran.
+
+Se probó que el problema de encontrar el set de fallos iniciales de tamaño k que causa la cascada con el mínimo rendimiento es NP-hard.
+
+La principal contribución del paper es el desarrollo de nuevas herramientas, basados en el matrix analysis, para evaluar el impacto de el fallo de una sola linea.
+
+RELATED WORK
+
