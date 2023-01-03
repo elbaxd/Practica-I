@@ -37,7 +37,6 @@ event F0 ⊆ E.
 Ante un fallo, algunas lineas son eliminadas del grafo, implicando que podría convertirse en desconectados.
 Siguiendo el evento de fallo inicial F_0, se computa el nuevo flujo f_e(F_0) en los pasos 1 y 2. Luego, se identifica el nuevo set de lineas que fallan F_1. Si esta vacío, se termina la cascada. Si no, se repite el proceso reemplzando el evento de fallo incial F^*_0 = F_0 con F^*_1. El proceso continua hasta que el sistema se estabiliza hasta saber que no se eliminan más líneas.
 
-METRICS
 
 
 
