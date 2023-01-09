@@ -35,7 +35,14 @@ event F0 ⊆ E.
 6: return t = i − 1, (F0, . . . , Ft), and fe(F*t) ∀e ∈ E\F*t.
 
 Ante un fallo, algunas lineas son eliminadas del grafo, implicando que podría convertirse en desconectados.
-Siguiendo el evento de fallo inicial F_0, se computa el nuevo flujo f_e(F_0) en los pasos 1 y 2. Luego, se identifica el nuevo set de lineas que fallan F_1. Si esta vacío, se termina la cascada. Si no, se repite el proceso reemplzando el evento de fallo incial F^*_0 = F_0 con F^*_1. El proceso continua hasta que el sistema se estabiliza hasta saber que no se eliminan más líneas.
+Siguiendo el evento de fallo inicial F_0, se computa el nuevo flujo f_e(F_0) en los pasos 1 y 2. Luego, se identifica el nuevo set de lineas que fallan F_1. Si esta vacío, se termina la cascada. Si no, se repite el proceso reemplzando el evento de fallo incial F^*_0 = F_0 con F^*_1. El proceso continua hasta que el sistema se estabiliza hasta saber que no se eliminan más líneas. Finalmente, se obtiene la secuencia de los set de fallas asociados al fallo inicial F_0 y el flujo de poder f_e(F^*_t) al estabilizarse, donde t es el numero de rondas hasta que se estabilizó. El tiempo requerido para resolver un sistema de ecuaciones lineales de n variables es O(n^3), el output del algoritmo se obtiene en O(t|V|^3) tiempo.
+
+Por simplicididad, si el fallo inicial contiene solo 1 linea o arista, F_0 = {e´}, el flujo de poder después del fallo es f´_e≡ f_e({e´}) y este cambia por ∆f_e = f´_e - f_e ∀e ∈E\{e´}.
+
+ADMITTANCE MATRIX PROPERTIES
+
+
+
 
 
 
