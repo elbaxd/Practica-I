@@ -1,0 +1,4 @@
+INTRODUCTION
+
+En redes interdependientes, una red depende de otra para lograr su funcionalidad total. Por ejemplo, redes de poder inteligentes, redes de transportes y redes de comunicación en capas.
+

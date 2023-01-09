@@ -41,9 +41,11 @@ Por simplicididad, si el fallo inicial contiene solo 1 linea o arista, F_0 = {eÂ
 
 ADMITTANCE MATRIX PROPERTIES
 
+Se usa el Moore-Penrose Pseudo-inverse de la matrix admittance para obtener los resultados durante el paper. 
+
+EFFECTS OF A SINGLE EDGE FAILURE
 
 
 
-
-
+EFFICIENT CASCADING FAILURE EVOLUTION COMPUTATION
 
