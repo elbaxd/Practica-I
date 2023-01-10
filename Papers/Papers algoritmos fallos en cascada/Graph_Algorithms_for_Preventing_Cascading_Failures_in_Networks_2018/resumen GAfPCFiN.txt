@@ -1,3 +1,8 @@
+ABSTRACT
+Los fallos en cascada en infraestructuras de red criticas que resultar incluso de una sola fuente de fallo a menudo conducen a cortes rapidamente generalizados. Este paper examina el problema de minimizar el corte cuando el fallo en cascada de una sola fuente ocurre. Una optimizacion del problema es formulada donde un limitado número de nodos de proteccion, colocados estrategicamente en la red pueden mitigar riesgo del sistema, pudiendo minimizar la propagacion del fallo en cascada. Algoritmos computacionalmente rápidos de paso de mensajes son desarrollados para resolver este problema. 
+
+INTRODUCTION
+
 El problema de detener el fallo en cascada se encuentra tanto en detectar la fuente del fallo como en colocar los nodos protectores de manera correcta y estrategica, para mitigar el riesgo sistematico.
 
 Las principales contribuciones del paper son:

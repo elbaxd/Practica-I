@@ -1,3 +1,6 @@
+ABSTRACT
+Se propone y analiza un modelo de grafo para estudiar conectividad en redes interdependientes. Dos redes interdependientes de topologías arbitrarias son modelados como dos grafos, en donde cada grafo es apoyado por nodos de apoyo de el otro grafo y si un nodo falla todos sus nodos de apoyo fallan. Estas interdependencias aparecen en sistema cyber-physical y arquitecturas de redes en capas. Se estudia la conectividad de los nodos de apoyos de una red: para saber, el minimo número de nodos de apoyo a remover para desconectar la red. Se desarrollan algoritmos para evaluar la conectividad de los nodos de apoyo dadas unas topologias de redes y dos redes interconectadas. 
+
 INTRODUCTION
 
 En redes interdependientes, una red depende de otra para lograr su funcionalidad total. Por ejemplo, redes de poder inteligentes, redes de transportes y redes de comunicación en capas.
