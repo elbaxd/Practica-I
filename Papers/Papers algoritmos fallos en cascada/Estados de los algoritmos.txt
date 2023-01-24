@@ -1,0 +1,19 @@
+Primer paper: algoritmo complicado de implementar con la librería igraph
+
+Segundo paper: esqueleto del algoritmo listo
+
+Tercer paper: desarrollando esqueleto
+
+Cuarto paper: Nada, pero posible
+
+Quinto paper: esqueleto del algoritmo avanzado
+
+Sexto paper: Nada, pero posible
+
+Septimo paper: Nada, pero posible
+
+Octavo paper: Nada y no creo que se haga
+
+Noveno paper: Nada, falta verlo mejor
+
+Decimo paper: No tiene algoritmo
