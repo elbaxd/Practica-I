@@ -1,19 +1,24 @@
-Primer paper: algoritmo complicado de implementar con la librería igraph
+an_efficient_algorithm_to_compute_mutually_connected_componets_2015 (Primer paper): algoritmo complicado de implementar con la librería igraph (Algoritmo1)
 
-Segundo paper: esqueleto del algoritmo listo
+cascading_failures_in_power_grids_analysis_and_algorithms_2014 (Segundo paper): esqueleto del algoritmo listo (Algoritmo3)
 
-Tercer paper: desarrollando esqueleto
+Connectivity_in_Interdependent_Networks_2018 (Tercer paper): desarrollando esqueleto (Algoritmo4)
 
-Cuarto paper: Nada, pero posible
+Efficient_Estimation_of_Component_Interactions_for_Cascading_Failure_Analysis_by_EM_Algorithm_2017 (Cuarto paper): Nada, pero posible
 
-Quinto paper: esqueleto del algoritmo avanzado
+Graph_Algorithms_for_Preventing_Cascading_Failures_in_Networks_2018 (Quinto paper): esqueleto del algoritmo avanzado (Algoritmo2)
 
-Sexto paper: esqueleto avanzado
+Interdependent_Power_Network_Disruptor_problem_NP_complete_2013 (Sexto paper): esqueleto avanzado (Algoritmo5)
 
-Septimo paper: Nada, pero posible
+Maximization_of_Robustness_of_Interdependent_Networks_under_Budget_Constraints_2019 (Septimo paper): Avanzado y terminado el esqueleto, no se implementará más, a menos que sea necesario, ya que no es relevante sobre fallos en cascada o algo sobre grafos. (Algoritmo 6)
 
-Octavo paper: Nada y no creo que se haga
 
-Noveno paper: Nada, falta verlo mejor
 
-Decimo paper: No tiene algoritmo
+
+
+
+Minnimum_spanning_trees_in_temporal_graphs_2015 (Octavo paper): Nada y no creo que se haga
+
+Robust_Routing_in_Interdependent_Networks_2017 (Noveno paper): Nada, falta verlo mejor
+
+Targeted_damage_to_interdependent_networks_2018 (Decimo paper): No tiene algoritmo
