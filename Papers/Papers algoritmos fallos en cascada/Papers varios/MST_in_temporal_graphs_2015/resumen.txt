@@ -1,1 +1,5 @@
-ABSTRACT
+Este paper trabaja con grafos temporales (que cambian con el tiempo) y con MST (Minimun Spanning Trees).
+Menciona que existen dos tipos de MST, los basados en optimización de tiempo (MSTa) y de costo (MSTw).
+Se propone un algoritmo lineal eficiente para computar MSTa y se muestra que computar MSTw es mucho mas complicado.
+Se diseñan aproximaciones de algoritmos eficientes basados en Directed Steiner Tree (DST).
+Se dice que, para MSTw, la solución del paper acorta el tiempo de 10 horas a 3 segundos :O .
