@@ -1,0 +1,3 @@
+Este paper habla sobre un algoritmo eficiente para calcular componentes mutuamente conectados en redes interdependientes.
+El algoritmo básicamente lo que realizar es agregar, remover o modificar los links de los grafos, para lograr calcular y revisar las conexiones.
+El tiempo de complejidad de este algoritmo es O(N^1.2) para grafos aleatorios, siendo O(N^2) el tiempo de complejidad de algoritmo de fuerza bruta.
