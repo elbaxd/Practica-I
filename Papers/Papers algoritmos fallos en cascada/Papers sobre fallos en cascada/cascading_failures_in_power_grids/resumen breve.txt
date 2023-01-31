@@ -1,0 +1,4 @@
+Este paper se centra en los fallos en cascada en la transmision de la red electrica.
+Se obtienen resultados acerca de MoorePenrose pseudo-inverse con la addmittance matrix de la red electrica.
+Usando la pseudo-inverse de la addmittance matrix para desarrollar un algoritmo eficiente para identificar la evolución de los fallos en cascada.
+Se muestra que encontrar el set de links a eliminar con el minimo rendimiento es NP-HARD.
