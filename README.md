@@ -1,7 +1,7 @@
 # Practica I
  Archivos de la práctica 1 en NIC LABS.
  
- Este repositorio contiene 10 papers que me fueron entregados por Ivana Bachmann, mi supervisora de la práctica, para poder leerlos, comprenderlos, resumirlos, lograr programarlos dentro de lo posible y si se lograba, hacer tests.
+ Este repositorio contiene 10 papers que me fueron entregados por Ivana Bachmann, mi supervisora de la práctica, para poder leerlos, comprenderlos, resumirlos, lograr programarlos dentro de lo posible y si se lograba, hacer tests. Todo esto con el propósito de que le sean útiles a ella a posterior.
  
  ## Categorías
  
