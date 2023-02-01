@@ -44,7 +44,9 @@ Los cuales cada uno tiene extraído su algoritmo y tienen un resumen.
 ### Otros temas
 
 La tercera y última categoría trata sobre otros temas, hay 2 papers:
+
 -An efficient algorithm to compute mutually connected componets in interdependent networks 2015
+
 -Minnimum spanning trees in temporal graphs 2015
 
 Los cuales cada uno tiene extraído su algoritmo y tienen un resumen.
