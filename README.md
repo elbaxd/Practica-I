@@ -17,11 +17,11 @@ Los papers están organizados en 3 categorías:
 
 En la primera categoría sobre fallos en cascada, hay 3 papers que hablan directamente de este tema:
 
--Graph Algorithms for Preventing Cascading Failures in Networks 2018
+* Graph Algorithms for Preventing Cascading Failures in Networks 2018
 
--Cascading failures in power grids analysis and algorithms 2014
+* Cascading failures in power grids analysis and algorithms 2014
 
--Efficient Estimation of Component Interactions for Cascading Failure Analysis by EM Algorithm 2017
+* Efficient Estimation of Component Interactions for Cascading Failure Analysis by EM Algorithm 2017
 
 
 Los cuales cada uno tiene extraído su algoritmo y tienen un resumen.
@@ -30,14 +30,15 @@ Los cuales cada uno tiene extraído su algoritmo y tienen un resumen.
 
 En la segunda categoría sobre conexiones entre componentes, hay 5 papers:
 
--Connectivity in Interdependent Networks 2018
--Interdependent Power Network Disruptor problem NP complete 2013
+* Connectivity in Interdependent Networks 2018
 
--Maximization of Robustness of Interdependent Networks under Budget Constraints 2019
+* Interdependent Power Network Disruptor problem NP complete 2013
 
--Robust Routing in Interdependent Networks 2017
+* Maximization of Robustness of Interdependent Networks under Budget Constraints 2019
 
--Targeted damage to interdependent networks 2018
+* Robust Routing in Interdependent Networks 2017
+
+* Targeted damage to interdependent networks 2018
 
 Los cuales cada uno tiene extraído su algoritmo y tienen un resumen.
 
@@ -45,9 +46,9 @@ Los cuales cada uno tiene extraído su algoritmo y tienen un resumen.
 
 La tercera y última categoría trata sobre otros temas, hay 2 papers:
 
--An efficient algorithm to compute mutually connected componets in interdependent networks 2015
+* An efficient algorithm to compute mutually connected componets in interdependent networks 2015
 
--Minnimum spanning trees in temporal graphs 2015
+* Minnimum spanning trees in temporal graphs 2015
 
 Los cuales cada uno tiene extraído su algoritmo y tienen un resumen.
 
@@ -55,17 +56,17 @@ Los cuales cada uno tiene extraído su algoritmo y tienen un resumen.
 
 De estos 10 papers, 6 tienen un esqueleto de algoritmo programado, que son:
 
--An efficient algorithm to compute mutually connected componets in interdependent networks 2015
+* An efficient algorithm to compute mutually connected componets in interdependent networks 2015
 
--Graph Algorithms for Preventing Cascading Failures in Networks 2018
+* Graph Algorithms for Preventing Cascading Failures in Networks 2018
 
--Cascading failures in power grids analysis and algorithms 2014
+* Cascading failures in power grids analysis and algorithms 2014
 
--Connectivity in Interdependent Networks 2018
+* Connectivity in Interdependent Networks 2018
 
--Interdependent Power Network Disruptor problem NP complete 2013
+* Interdependent Power Network Disruptor problem NP complete 2013
 
--Maximization of Robustness of Interdependent Networks under Budget Constraints 2019
+* Maximization of Robustness of Interdependent Networks under Budget Constraints 2019
 
 
 ## Observaciones y comentarios
