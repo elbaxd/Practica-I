@@ -7,11 +7,11 @@
  
 Los papers están organizados en 3 categorías:
 
--Los que hablan sobre fallos en cascadas
+* Los que hablan sobre fallos en cascadas
 
--Los que hablan sobre las conexiones entre componentes de un grafo
+* Los que hablan sobre las conexiones entre componentes de un grafo
 
--Otros temas
+* Otros temas
 
 ### Fallos en cascada
 
