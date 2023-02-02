@@ -1,0 +1,3 @@
+Las bitácoras que aquí se encuetran son de las semanas en las que leía los papers, los resumía y obtenía sus algoritmos.
+
+Lamentablemente, no hay bitácoras de cuando empecé a programar los algoritmos.
