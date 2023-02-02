@@ -74,4 +74,4 @@ En esta sección se encuentran observaciones y comentarios de mi parte, sobre lo
 
 Primero, al comenzar a leer los papers, me di cuenta de que la forma en la que se encuentran escritos es dificil de comprender y entender, esto ya que el léxico empleado junto a las citas, hace que si no se poseen conocimientos sobre el tema, se complica el entendimiento de las ideas escritas en el paper.
 
-Segundo, así como lo que se encuentra escrito es díficil de comprender, los algoritmos que se muestran también lo son, debido a que se asumen funciones y variables, haciendo que aún mirando los ejemplos con los grafos que se incluyen no sea una tarea fácil entender los algoritmos presentados.
+Segundo, así como lo que se encuentra escrito es díficil de comprender, los algoritmos que se muestran también lo son, debido a que se asumen funciones y variables, haciendo que aún mirando los ejemplos con los grafos que se incluyen, no sea una tarea fácil entender los algoritmos presentados.
