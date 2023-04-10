@@ -1,1 +1,0 @@
-Este algoritmo no tiene una relación directa con los fallos en cascada, dejar para después.
