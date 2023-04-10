@@ -5,3 +5,5 @@ Implementar los algoritmos: para el 13 de enero de 2023, con posibilidad de exte
 Día miércoles 29 de diciembre de 2022: Terminé con la recolección de los algoritmos de los papers, usaré los días restantes hasta el 5 de enero aproximadamente para comprender lo mejor posible los papers y terminar los resumenes.
 
 Actualización: Esto perdio el sentido en la semana del 9 de enero, ahi terminé con la mayoría de los papers. El lunes 16 empecé con los algoritmos y el miercoles 25 con los tests. 
+
+Actualización 2: no hubieron tests XD 
