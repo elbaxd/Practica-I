@@ -22,14 +22,14 @@ def CFE(G,F0):
     while Fi != None:
         # Ajustar la demanda total igual a al total supply en cada componente conectado
 
-        #Computar los nuevos flujos 
+        # Computar los nuevos flujos 
 
         # Encontrar el nuevo set de aristas que fallan
 
     return t=i-1 , (F0,...,Ft) , fe(f*t) # Para cada e en las aristas menos las aristas que fallan
 
 def CFEPB(G,F0):
-    # Se computa A+
+    Compute A+
     F*=0
     i=0
     while Fi != None:
@@ -41,15 +41,20 @@ def CFEPB(G,F0):
               
             else:
                 delete_edge(arista) # Lemma 4
-                # Update A+ despues
-    # Computar los angulos 0 = A^+ P
+                Update A+ 
+    Compute 0 = A^+ P
     # Computar los nuevos flujos de los angulos de fase
     # Encontrar el nuevo set de aristas que fallan
     return t=i-1, (F0,...,Fi), fe(f*t)
 
 def MVESRB(G,k):
-    # Computar A+
+    Compute A+
     # Computar angulos de fase Θ =A^+ P y los flujos de los angulos de fase
-    # Computar la distancia de resistencia r(i,j)= r(e), para todo e=(i,j) de E
-    # Ordenar las aristas (Sort edges) tal que p<=q si solo si f(ep)r(ep) = f(eq)r(eq)
-    return e1,e2,...,ek
+    for e in E:
+        # Computar la distancia de resistencia r(i,j)= r(e), para todo e=(i,j) de E
+        Compute r(i,j)= r(e)
+        # Ordenar las aristas (Sort edges) tal que p<=q si solo si f(ep)r(ep) = f(eq)r(eq)
+        if f(ep)r(ep) = f(eq)r(eq):
+            if p<=q:
+                sort(edges)
+        return e1,e2,...,ek
