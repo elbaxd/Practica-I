@@ -22,9 +22,9 @@ def CFE(G,F0):
     while Fi != None:
         # Ajustar la demanda total igual a al total supply en cada componente conectado
 
-        Compute new flows
+        # Computar los nuevos flujos 
 
-        find(failed_edges)
+        # Encontrar el nuevo set de aristas que fallan
 
     return t=i-1 , (F0,...,Ft) , fe(f*t) # Para cada e en las aristas menos las aristas que fallan
 
@@ -44,9 +44,7 @@ def CFEPB(G,F0):
                 Update A+ 
     Compute 0 = A^+ P
     # Computar los nuevos flujos de los angulos de fase
-    Compute new flows
     # Encontrar el nuevo set de aristas que fallan
-    find(failed_edges)
     return t=i-1, (F0,...,Fi), fe(f*t)
 
 def MVESRB(G,k):
